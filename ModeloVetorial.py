@@ -1,10 +1,17 @@
-import nltk
+""" Para implementar o modelo Vetorial, vamos seguir alguns passos:
+    Primeiro: processamento do texto ;
+    Segundo: Calcular o TF-IDF;
+    Terceiro: Calcular a similaridade de coscenos;
+    Quarto: Ranquear os documentos pela similaridade.
+"""
+
+# Essa biblioteca (nltk), auxilia no trabalho com a linguagem natural
+import nltk 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Sample documents
+# Exemplo de documentos
 documents = [
-
     # **Algoritmos e Estruturas de Dados:**
 
     "Quais são os diferentes tipos de algoritmos de classificação e qual é o mais adequado para cada tipo de problema?",
@@ -193,37 +200,38 @@ documents = [
     "Como os algoritmos de roteamento de pacotes são utilizados na internet para entregar dados aos seus destinos?",
     "O que são algoritmos de aprendizado por transferência e em que cenários são aplicados?",
     "Quais são os desafios de segurança associados à inteligência artificial e como podem ser mitigados?",
-    ]
+]
 
-# Sample query
+# Exemplo de consulta
 query = "Mínimo, máximo"
 
-# Step 1: Tokenize and preprocess the text
+# Primeiro passo: Tokenizar e processar o texto
 nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 tokenized_documents = [word_tokenize(doc.lower()) for doc in documents]
 tokenized_query = word_tokenize(query.lower())
 
-# Step 2: Calculate TF-IDF
-# Convert tokenized documents to text
+# Segundo passo: Calcular o TF-IDF (Term Frequency — Inverse Document Frequency)
+# Converter documentos tokenizados em texto 
 preprocessed_documents = [' '.join(doc) for doc in tokenized_documents]
 preprocessed_query = ' '.join(tokenized_query)
 
-# Create a TF-IDF vectorizer
+# Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
 tfidf_matrix = tfidf_vectorizer.fit_transform(preprocessed_documents)
 
-# Transform the query into a TF-IDF vector
+# Transformando a consulta em um vetor TF-IDF
 query_vector = tfidf_vectorizer.transform([preprocessed_query])
 
-# Step 3: Calculate cosine similarity
-cosine_similarities = cosine_similarity(query_vector, tfidf_matrix)
+# Terceiro passo: Calcular similaridade de cosseno 
+cosine_similarity = cosine_similarity(query_vector, tfidf_matrix)
 
-# Step 4: Rank documents by similarity
-results = [(documents[i], cosine_similarities[0][i]) for i in range(len(documents))]
-results.sort(key=lambda x: x[1], reverse=True)
+# Quarto passo: Ranquear documentos pela similaridade 
+results = [(documents[i], cosine_similarity[0][i]) for i in range (len(documents))]
+results.sort(key=lambda x : x[1], reverse=True)
 
-# Print the ranked documents
-for doc, similarity in results:
+# Printa os documentos ranqueados
+for doc, similarity in results: 
     if similarity != 0.0:
-        print(f"Similarity: {similarity:.2f}\n{doc}\n")
+        print(f"Grau de similaridade: {similarity:.2f}\n{doc}\n")
+
