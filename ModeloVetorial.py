@@ -202,8 +202,8 @@ documents = [
     "Quais são os desafios de segurança associados à inteligência artificial e como podem ser mitigados?",
 ]
 
-# Exemplo de consulta
-query = "Mínimo, máximo"
+# Entrada da consulta
+query = input("Quais palavras deseja consultar?\n")
 
 # Primeiro passo: Tokenizar e processar o texto
 nltk.download('punkt')
@@ -231,7 +231,11 @@ results = [(documents[i], cosine_similarity[0][i]) for i in range (len(documents
 results.sort(key=lambda x : x[1], reverse=True)
 
 # Printa os documentos ranqueados
+found = 0
 for doc, similarity in results: 
     if similarity != 0.0:
         print(f"Grau de similaridade: {similarity:.2f}\n{doc}\n")
-
+        found += 1
+# Se não encontrar nenhum documento com similaridade com a entrada printa essa mensagem para o usuário
+if found == 0:
+    print(f"Nenhum resultado encontrado na base de dados para essa consulta!\n")
