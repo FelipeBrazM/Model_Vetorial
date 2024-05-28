@@ -78,7 +78,6 @@ documents = [
     "Como podemos utilizar estruturas de dados eficientes, como árvores binárias e tabelas hash, para otimizar o tempo de busca e acesso a informações?",
     "Explique a diferença entre recursão e iteração e quando cada uma deve ser utilizada na resolução de problemas.",
     "Como podemos analisar a complexidade de tempo e espaço de um algoritmo e qual a importância dessa análise?",
-    "Descreva diferentes algoritmos de busca, como busca binária e busca em largura, e suas aplicações práticas.",
     "O que são grafos e como podemos utilizá-los para representar e resolver problemas de redes?",
     "Explique o funcionamento do algoritmo de Dijkstra para encontrar o caminho mais curto em um grafo.",
     "Quais são as diferenças entre algoritmos guloso e de programação dinâmica?",
@@ -231,11 +230,11 @@ results = [(documents[i], cosine_similarity[0][i]) for i in range (len(documents
 results.sort(key=lambda x : x[1], reverse=True)
 
 # Printa os documentos ranqueados
-found = 0
+found = False
 for doc, similarity in results: 
     if similarity != 0.0:
         print(f"Grau de similaridade: {similarity:.2f}\n{doc}\n")
-        found += 1
+        found = True
 # Se não encontrar nenhum documento com similaridade com a entrada printa essa mensagem para o usuário
-if found == 0:
+if found == False:
     print(f"Nenhum resultado encontrado na base de dados para essa consulta!\n")
