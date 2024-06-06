@@ -11,6 +11,13 @@ import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+nltk.download('stopwords')
+nltk.download('rslp')
+nltk.download('wordnet')
+stopwords = nltk.corpus.stopwords.words # Lista de stopwords
+stopwords = nltk.corpus.stopwords.words("portuguese") # Pegando as stopwords em português
+stopwords.sort() # Ordenando as stopwords por ordem alfabética 
+
 # Exemplo de documentos
 documents = [
     # **Algoritmos e Estruturas de Dados:**
@@ -219,10 +226,24 @@ from nltk.tokenize import word_tokenize
 tokenized_documents = [word_tokenize(doc.lower()) for doc in documents]
 tokenized_query = word_tokenize(query.lower())
 
+palavras_not_stopwords = [] # Criação de uma lista para armazenar os documentos da base sem "stopwords"
+palavras_not_rad = [] # Criação de uma lista para armazenar os documentos da base com apenas os radicais
+
+for k in range(0, len(tokenized_query)): 
+        if(tokenized_query[k] not in stopwords): # Se a palavra ou caracter da posição k na lista paluvras não for "stopwords" (variável criada)
+            palavras_not_stopwords.append(tokenized_query[k]) # Utilizo a função append para acrescentar a "palavra" dentro da minha lista de palavras sem stopwords
+
+# Utilizando o WordNetLemmatizer para obter os radicais das palavras
+lemmatizer = nltk.stem.WordNetLemmatizer()
+for k in range(0, len(palavras_not_stopwords)):
+    palavras_not_rad.append(lemmatizer.lemmatize(palavras_not_stopwords[k]))
+
 # Segundo passo: Calcular o TF-IDF (Term Frequency — Inverse Document Frequency)
 # Converter documentos tokenizados em texto 
 preprocessed_documents = [' '.join(doc) for doc in tokenized_documents]
-preprocessed_query = ' '.join(tokenized_query)
+preprocessed_query = ' '.join(palavras_not_rad)
+
+#print(preprocessed_query)
 
 # Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
@@ -247,3 +268,4 @@ for doc, similarity in results:
 # Se não encontrar nenhum documento com similaridade com a entrada printa essa mensagem para o usuário
 if found == False:
     print(f"Nenhum resultado encontrado na base de dados para essa consulta!\n")
+
