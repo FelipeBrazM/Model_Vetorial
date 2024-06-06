@@ -4,6 +4,7 @@
     Terceiro: Calcular a similaridade de coscenos;
     Quarto: Ranquear os documentos pela similaridade.
 """
+# Para executar o código colocar na linha de comando: python ModeloVetorial.py
 
 # Essa biblioteca (nltk), auxilia no trabalho com a linguagem natural
 import nltk 
@@ -15,10 +16,19 @@ documents = [
     # **Algoritmos e Estruturas de Dados:**
 
     "Quais são os diferentes tipos de algoritmos de classificação e qual é o mais adequado para cada tipo de problema?",
-    "Como podemos utilizar estruturas de dados eficientes, como árvores binárias e tabelas hash, para otimizar o tempo de busca e acesso a informações?",
     "Explique a diferença entre recursão e iteração e quando cada uma deve ser utilizada na resolução de problemas.",
     "Como podemos analisar a complexidade de tempo e espaço de um algoritmo e qual a importância dessa análise?",
     "Descreva diferentes algoritmos de busca, como busca binária e busca em largura, e suas aplicações práticas.",
+    "Explique o funcionamento da busca binária e da busca em largura, destacando suas principais vantagens e desvantagens.",
+    "Compare e contraste os algoritmos de busca binária e busca em profundidade. Quais são as situações ideais para usar cada um?",
+    "Quais são as aplicações mais comuns dos algoritmos de busca binária e busca em largura na ciência da computação?",
+    "Discuta como a busca binária e a busca em largura podem ser otimizadas em termos de desempenho.",
+    "Explique como funcionam a busca em largura e a busca em profundidade, e forneça exemplos práticos de uso.",
+    "Descreva o algoritmo de busca em largura e sua importância na teoria dos grafos.",
+    "Compare a eficiência da busca binária com a busca linear em diferentes cenários práticos.",
+    "Como a busca em largura é utilizada em algoritmos de inteligência artificial, como a busca em árvore de decisão?",
+    "Qual é a diferença entre busca binária e busca ternária, e quando seria vantajoso usar uma sobre a outra?",
+    "Discuta as aplicações da busca binária na organização e gerenciamento de dados em bancos de dados.",
 
     # **Programação:**
 
@@ -68,7 +78,7 @@ documents = [
     "Descreva as melhores práticas para garantir a segurança da informação em uma organização.",
     "Quais são as leis e regulamentos relacionados à segurança da informação que devem ser cumpridos?",
 
-    # **Desenvolvimento Web:**
+    # **Outros tópicos:**
 
     "Quais são as diferentes tecnologias front-end e back-end utilizadas para desenvolver websites e aplicativos web?",
     "Explique como o HTML, CSS e JavaScript são utilizados para criar interfaces web interativas.",
@@ -76,7 +86,6 @@ documents = [
     "Descreva as melhores práticas para garantir a performance, acessibilidade e segurança de websites e aplicativos web.",
     "Quais são os diferentes tipos de algoritmos de classificação e qual é o mais adequado para cada tipo de problema?",
     "Como podemos utilizar estruturas de dados eficientes, como árvores binárias e tabelas hash, para otimizar o tempo de busca e acesso a informações?",
-    "Explique a diferença entre recursão e iteração e quando cada uma deve ser utilizada na resolução de problemas.",
     "Como podemos analisar a complexidade de tempo e espaço de um algoritmo e qual a importância dessa análise?",
     "O que são grafos e como podemos utilizá-los para representar e resolver problemas de redes?",
     "Explique o funcionamento do algoritmo de Dijkstra para encontrar o caminho mais curto em um grafo.",
