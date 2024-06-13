@@ -57,6 +57,16 @@ documents = [
 
     "Como os dados são transmitidos na internet e quais protocolos são utilizados para essa comunicação?",
     "Explique a diferença entre endereços IP e nomes de domínio e como eles são utilizados para identificar computadores na rede.",
+    "Como os endereços IP e os nomes de domínio trabalham juntos para facilitar a navegação na internet?",
+    "Quais são as diferenças entre IPv4 e IPv6 e como essas versões afetam a identificação de dispositivos na rede?",
+    "O que é DNS (Sistema de Nomes de Domínio) e qual sua importância na tradução de nomes de domínio para endereços IP?",
+    "Descreva o processo de resolução de nomes de domínio e como um nome de domínio é convertido em um endereço IP.",
+    "Como os endereços IP estáticos e dinâmicos diferem e quais são seus usos na rede?",
+    "Quais são os principais componentes de um endereço IP e como eles contribuem para a identificação de computadores na rede?",
+    "Explique como funciona o DHCP (Protocolo de Configuração Dinâmica de Host) na atribuição de endereços IP.",
+    "O que é um roteador e como ele usa endereços IP para encaminhar pacotes de dados na rede?",
+    "Qual é a função de um servidor de nomes de domínio (DNS) na infraestrutura da internet?",
+    "Quais são as vantagens e desvantagens de usar endereços IP públicos versus privados na rede?",
     "Quais são os diferentes tipos de topologias de rede e como cada uma impacta o desempenho e a confiabilidade da rede?",
     "Como a segurança é implementada em redes de computadores para proteger contra ataques e proteger dados?",
     "Descreva os diferentes protocolos de rede, como TCP/IP e HTTP, e suas funções.",
@@ -72,10 +82,16 @@ documents = [
     # **Banco de Dados:**
 
     "Quais são os diferentes modelos de banco de dados, como relacional, NoSQL e grafo, e qual é o mais adequado para cada tipo de aplicação?",
-    "Explique como o SQL é utilizado para consultar e manipular dados em bancos de dados relacionais.",
-    "Como podemos garantir a integridade e consistência dos dados em um banco de dados?",
-    "Descreva as diferentes técnicas de otimização de desempenho para consultas em bancos de dados.",
-    "Quais são as medidas de segurança que devem ser tomadas para proteger um banco de dados contra acessos não autorizados?",
+    "Como escolher entre um banco de dados relacional e um banco de dados NoSQL para um projeto específico?",
+    "Quais são as principais diferenças entre bancos de dados relacionais e bancos de dados de grafo?",
+    "Em quais cenários é mais vantajoso utilizar um banco de dados NoSQL em vez de um relacional?",
+    "Quais são os benefícios e desvantagens de utilizar bancos de dados de grafo para representar dados complexos?",
+    "Quais são os casos de uso típicos para bancos de dados relacionais, NoSQL e de grafo?",
+    "Como a estrutura dos dados influencia na escolha entre um banco de dados relacional, NoSQL e de grafo?",
+    "Quais são os principais exemplos de bancos de dados NoSQL e quais são suas características distintivas?",
+    "Em que situações um banco de dados de grafo é mais eficiente que um banco de dados relacional ou NoSQL?",
+    "Quais são as vantagens e desvantagens de utilizar um banco de dados relacional em comparação com um banco de dados NoSQL?",
+    "O que são sistemas de gerenciamento de banco de dados NoSQL e quais são suas vantagens?",
 
     # **Segurança da Informação:**
 
@@ -91,7 +107,6 @@ documents = [
     "Explique como o HTML, CSS e JavaScript são utilizados para criar interfaces web interativas.",
     "Como podemos utilizar frameworks web, como Django e React, para agilizar o desenvolvimento web?",
     "Descreva as melhores práticas para garantir a performance, acessibilidade e segurança de websites e aplicativos web.",
-    "Quais são os diferentes tipos de algoritmos de classificação e qual é o mais adequado para cada tipo de problema?",
     "Como podemos utilizar estruturas de dados eficientes, como árvores binárias e tabelas hash, para otimizar o tempo de busca e acesso a informações?",
     "Como podemos analisar a complexidade de tempo e espaço de um algoritmo e qual a importância dessa análise?",
     "O que são grafos e como podemos utilizá-los para representar e resolver problemas de redes?",
@@ -183,6 +198,16 @@ documents = [
     "Explique o funcionamento do algoritmo de classificação K-means e em quais situações é utilizado.",
     "Quais são as técnicas de segurança mais comuns para proteger redes sem fio?",
     "Como os algoritmos de aprendizado profundo são aplicados em problemas de processamento de linguagem natural?",
+    "Quais são as principais técnicas de aprendizado profundo usadas em processamento de linguagem natural?",
+    "Como as redes neurais convolucionais são utilizadas no processamento de linguagem natural?",
+    "Quais são os desafios enfrentados ao aplicar aprendizado profundo em processamento de linguagem natural?",
+    "De que forma os modelos de linguagem como BERT e GPT são aplicados em tarefas de processamento de linguagem natural?",
+    "Como a transformação de texto em vetores (word embeddings) facilita o uso de aprendizado profundo no processamento de linguagem natural?",
+    "Qual é o papel das redes neurais recorrentes no processamento de linguagem natural?",
+    "Como o aprendizado profundo melhora a precisão dos sistemas de tradução automática?",
+    "Quais são as diferenças entre os métodos tradicionais de processamento de linguagem natural e os baseados em aprendizado profundo?",
+    "Como os modelos de aprendizado profundo são treinados para entender o contexto em processamento de linguagem natural?",
+    "De que forma o aprendizado profundo contribui para o desenvolvimento de chatbots e assistentes virtuais no processamento de linguagem natural?",
     "O que são as primitivas de sincronização e como elas são usadas para garantir a consistência de dados?",
     "Explique o conceito de computação heterogênea e como ela é aplicada em sistemas de alto desempenho.",
     "Quais são as técnicas de prevenção de ataques de negação de serviço (DDoS) e como elas funcionam?",
@@ -202,7 +227,6 @@ documents = [
     "Explique o conceito de criptomoeda e como funciona a tecnologia blockchain.",
     "Quais são os protocolos de roteamento mais comuns em redes de computadores e como eles operam?",
     "Como funcionam os sistemas de recomendação baseados em filtragem colaborativa e conteúdo?",
-    "O que são sistemas de gerenciamento de banco de dados NoSQL e quais são suas vantagens?",
     "Quais são os desafios de privacidade associados ao uso de grandes volumes de dados pessoais?",
     "Explique o conceito de balanceamento de carga global em arquiteturas de nuvem.",
     "Como os sistemas distribuídos lidam com problemas de consistência de dados e concorrência?",
@@ -218,7 +242,7 @@ documents = [
 ]
 
 # Entrada da consulta
-query = input("Quais palavras deseja consultar?\n")
+query = input("O que deseja consultar no banco de questões?\n")
 
 # Primeiro passo: Tokenizar e processar o texto
 nltk.download('punkt')
@@ -227,23 +251,32 @@ tokenized_documents = [word_tokenize(doc.lower()) for doc in documents]
 tokenized_query = word_tokenize(query.lower())
 
 palavras_not_stopwords = [] # Criação de uma lista para armazenar os documentos da base sem "stopwords"
-palavras_not_rad = [] # Criação de uma lista para armazenar os documentos da base com apenas os radicais
+#palavras_not_rad = [] # Criação de uma lista para armazenar os documentos da base com apenas os radicais
 
 for k in range(0, len(tokenized_query)): 
         if(tokenized_query[k] not in stopwords): # Se a palavra ou caracter da posição k na lista paluvras não for "stopwords" (variável criada)
             palavras_not_stopwords.append(tokenized_query[k]) # Utilizo a função append para acrescentar a "palavra" dentro da minha lista de palavras sem stopwords
 
+#print("\n",palavras_not_stopwords,"\n")
+
 # Utilizando o WordNetLemmatizer para obter os radicais das palavras
-lemmatizer = nltk.stem.WordNetLemmatizer()
+"""lemmatizer = nltk.stem.WordNetLemmatizer()
 for k in range(0, len(palavras_not_stopwords)):
     palavras_not_rad.append(lemmatizer.lemmatize(palavras_not_stopwords[k]))
+
+
+for k in range(0, len(palavras_not_stopwords)):
+        stemmer = nltk.stem.RSLPStemmer() # Criação de uma variável que permite que eu possa tirar os radicais das palavras
+        palavras_not_rad.append(stemmer.stem(palavras_not_stopwords[k])) # Colocando as palavras sem as stopwords e com seus radicais extraídos na lista palavras_not_rad
+
+print("\n",palavras_not_rad,"\n")"""
 
 # Segundo passo: Calcular o TF-IDF (Term Frequency — Inverse Document Frequency)
 # Converter documentos tokenizados em texto 
 preprocessed_documents = [' '.join(doc) for doc in tokenized_documents]
-preprocessed_query = ' '.join(palavras_not_rad)
+preprocessed_query = ' '.join(palavras_not_stopwords)
 
-#print(preprocessed_query)
+print("\n",preprocessed_query,"\n")
 
 # Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
