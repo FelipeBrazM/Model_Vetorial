@@ -14,6 +14,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 nltk.download('stopwords')
 nltk.download('rslp')
 nltk.download('wordnet')
+nltk.download('punkt')
+
 stopwords = nltk.corpus.stopwords.words # Lista de stopwords
 stopwords = nltk.corpus.stopwords.words("portuguese") # Pegando as stopwords em português
 stopwords.sort() # Ordenando as stopwords por ordem alfabética 
@@ -34,43 +36,31 @@ documents = read_txt(name_file)
 query = input("O que deseja consultar no banco de questões?\n")
 
 # Primeiro passo: Tokenizar e processar o texto
-nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 tokenized_documents = [word_tokenize(doc.lower()) for doc in documents]
 tokenized_query = word_tokenize(query.lower())
 
-palavras_not_stopwords = [] # Criação de uma lista para armazenar os documentos da base sem "stopwords"
-#palavras_not_rad = [] # Criação de uma lista para armazenar os documentos da base com apenas os radicais
+# Função para remover stopwords e fazer a radicalização
+def preprocess(text):
+    stemmer = nltk.stem.RSLPStemmer()
+    return [stemmer.stem(word) for word in text if word not in stopwords]
 
-for k in range(0, len(tokenized_query)): 
-        if(tokenized_query[k] not in stopwords): # Se a palavra ou caracter da posição k na lista paluvras não for "stopwords" (variável criada)
-            palavras_not_stopwords.append(tokenized_query[k]) # Utilizo a função append para acrescentar a "palavra" dentro da minha lista de palavras sem stopwords
+# Preprocessar a consulta
+processed_query = preprocess(tokenized_query)
 
-#print("\n",palavras_not_stopwords,"\n")
+# Preprocessar os documentos
+processed_documents = [preprocess(doc) for doc in tokenized_documents]
 
-# Utilizando o WordNetLemmatizer para obter os radicais das palavras
-"""lemmatizer = nltk.stem.WordNetLemmatizer()
-
-for k in range(0, len(palavras_not_stopwords)):
-    palavras_not_rad.append(lemmatizer.lemmatize(palavras_not_stopwords[k]))
-
-
-for k in range(0, len(palavras_not_stopwords)):
-        stemmer = nltk.stem.RSLPStemmer() # Criação de uma variável que permite que eu possa tirar os radicais das palavras
-        palavras_not_rad.append(stemmer.stem(palavras_not_stopwords[k])) # Colocando as palavras sem as stopwords e com seus radicais extraídos na lista palavras_not_rad
-
-print("\n",palavras_not_rad,"\n")"""
-
-# Segundo passo: Calcular o TF-IDF (Term Frequency — Inverse Document Frequency)
-# Converter documentos tokenizados em texto 
-preprocessed_documents = [' '.join(doc) for doc in tokenized_documents]
-preprocessed_query = ' '.join(palavras_not_stopwords)
-
+# Segundo passo: Calcular o TF-IDF (Term Frequency — Inverse Document Frequency) 
+# Converter documentos tokenizados em texto
+preprocessed_documents = [' '.join(doc) for doc in processed_documents]
+preprocessed_query = ' '.join(processed_query)
 print("\n",preprocessed_query,"\n")
 
 # Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
 tfidf_matrix = tfidf_vectorizer.fit_transform(preprocessed_documents)
+
 
 # Transformando a consulta em um vetor TF-IDF
 query_vector = tfidf_vectorizer.transform([preprocessed_query])
