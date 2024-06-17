@@ -61,7 +61,6 @@ print("\n",preprocessed_query,"\n")
 tfidf_vectorizer = TfidfVectorizer()
 tfidf_matrix = tfidf_vectorizer.fit_transform(preprocessed_documents)
 
-
 # Transformando a consulta em um vetor TF-IDF
 query_vector = tfidf_vectorizer.transform([preprocessed_query])
 
