@@ -1,0 +1,339 @@
+Grau de similaridade: 1.00
+A CBF te contratou para fazer um programa para calcular as estatísticas de um juiz em várias partidas do Campeonato Brasileiro. No início, o programa lê o nome do juiz e a quantidade de partidas em que ele atuou. Em seguida, ele lê um conjunto de informações quantitativas sobre cada partida: impedimentos, faltas marcadas, cartões aplicados e o tempo de acréscimo (em minutos). Todos estes valores são inteiros, exceto o tempo, que é real. Ao final, o programa calcula e imprime a média de cada informação, com duas casas decimais de precisão. Implemente o programa seguindo o padrão dos exemplos a seguir. Considere que as entradas são sempre válidas, ou seja, não é preciso fazer verificações sobre os dados de entrada.
+=====================================================================================================================================================================
+Grau de similaridade: 0.14
+Dado um objeto em queda livre, calcular a velocidade em um instante de tempo e a distância total percorrida desde o início da queda, tendo como a entrada do usuário o instante de tempo t. Fórmulas:
+
+g=9,807
+v=g⋅t
+s=g⋅t22
+=====================================================================================================================================================================
+Grau de similaridade: 0.13
+A função do movimento uniforme nos permite encontrar a posição (S) de um objeto que se movimenta com velocidade constante (v) em qualquer instante de tempo (t), desde que saibamos sua posição inicial (Si), através da seguinte fórmula:
+
+S=Si+v×t
+Implemente um programa que receba do usuário os valores de entrada, e as armazene em variáveis: posição inicial (Si), a velocidade (v) e o instante de tempo (t), respectivamente. Todas as entradas são números reais, sendo que Si deve ser maior ou igual a 0 (zero) e, por outro lado, v e t devem ser maiores do que 0 (zero). Observe que o programa avalia as entradas, forçando valores válidos. Em seguida, o programa deve realizar o cálculo da posição final (S) e imprimir o resultado no terminal com uma precisão de 2 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.13
+Você faz parte do grêmio estudantil de química da UFOP e pretende substituir o sistema de votação em papel por um sistema de eleição eletrônica. Para isso, você deve desenvolver um programa que fará o seguinte:
+
+Ler os dados de 2 candidatos (nome e número);
+Ler a quantidade de eleitores fazendo a sua validação: enquanto a quantidade for inferior a 3, informar ao usuário que esta quantidade é inválida e solicitar uma nova quantidade de eleitores.
+Imprimir a mensagem de votação iniciada;
+Fazer a leitura de todos os votos, contabilizando: votos válidos, votos inválidos, votos para o candidato 1 e votos para o candidato 2;
+Imprimir a mensagem de votação encerrada;
+Imprimir o resultado da apuração, contento o percentual de votos válidos e inválidos, além dos percentuais de cada candidato sobre os votos válidos, conforme os exemplos a seguir. Note que todos os valores percentuais estão com 2 casas decimais. DICA: a divisão por zero acarreta em um erro de execução, portanto, é necessário verificar a quantidade de votos antes de calcular um percentual.
+=====================================================================================================================================================================
+Grau de similaridade: 0.13
+Faça um programa que lê os elementos de uma matriz (números inteiros) com a função inputMatriz. O usuário deve informar a coluna cujos elementos serão multiplicados por 2. A coluna informada deve ser validada, forçando o usuário à definição de um valor válido. Imprima a matriz após as alterações. A matriz sempre terá pelo menos duas linhas e duas colunas.
+=====================================================================================================================================================================
+Grau de similaridade: 0.11
+As pontuações de dois atletas em um campeonato são representados em duas matrizes de números inteiros, uma para cada atleta. O campeonato é composto por provas, e cada prova é composta de várias etapas. Desejamos saber quantas vezes cada atleta ganhou (obteve pontuação maior) e quantos empates ocorreram. Implemente um programa que faça a leitura das duas matrizes de pontuações, uma para cada atleta. Nestas matrizes, cada linha representa uma prova e cada coluna representa uma etapa, e os valores representam as pontuações. Em seguida, realize o cálculo das vitórias de cada atleta e o número de empates, ao final, imprima os resultados no terminal. O programa deve verificar se as matrizes são compatíveis (possuem as mesmas dimensões).
+=====================================================================================================================================================================
+Grau de similaridade: 0.11
+Progressão geométrica é uma sequência numérica que possui uma razão fixa denominada q onde, a partir da definição do primeiro termo a1, os termos subsequentes são calculados individualmente pela razão q multiplicada pelo seu antecessor.
+
+Para determinar um termo qualquer desta sequência, não é necessário calcular todos os seus antecessores a partir do primeiro termo, você pode obter o termo an conhecendo apenas o termo inicial a1 e a razão q aplicando a equação:
+
+an=a1×qn−1
+Implemente um programa que leia, como entradas dos usuários, os valores reais representando o primeiro termo (a1) e a razão (q), o valor inteiro representando o número n. O programa calcula o valor do termo an e imprime o resultado no terminal com uma precisão de 2 casas decimais. Exemplos de execução a seguir.
+=====================================================================================================================================================================
+Grau de similaridade: 0.11
+Faça um programa que desenha um retângulo de altura a e largura ℓ usando asteriscos. O usuário deve informar os valores de a e ℓ, que devem ser maiores que zero e tais que ℓ. Note que o seu programa deve garantir que os valores digitados sejam válidos, forçando entradas válidas. O programa também deve perguntar se o usuário gostaria de gerar um retângulo antes de fazer cada impressão. O programa termina assim que o usuário responder 'n' à pergunta.
+=====================================================================================================================================================================
+Grau de similaridade: 0.10
+Você deve implementar um programa que realiza a leitura das notas dos alunos de BCC701, preenchendo um vetor de valores reais (sempre haverá pelo menos uma nota). A partir deste vetor, você deve imprimir as seguintes estatísticas da turma: (i) maior nota; (ii) menor nota; (iii) média das notas. Para obter estes valores, você deve implementar a função estatNotas, que recebe o vetor de notas como argumento de entrada, calcula e retorna os três valores (na ordem definida anteriormente). Sendo assim, o seu programa principal seguirá o algoritmo:
+
+Ler os valores do vetor chamando a função inputVetor;
+Chamar a função estatNotas (implementada por você);
+Imprimir os valores retornados pela função estatNotas no terminal (com uma casa decimal).
+=====================================================================================================================================================================
+Grau de similaridade: 0.10
+O valor da função matemática f(x,y) é definido da seguinte forma:
+
+Implemente um programa que avalia o valor da função f para valores de x e y definidos pelas entradas do usuário para: Ini, Fim e Passo (valores inteiros que definem os atributos das repetições). As seguintes regras para a entrada devem ser satisfeitas: -150 <= Ini <= 50, Ini < Fim e Passo > 0, forçando apenas entradas válidas.
+
+Os resultados para cada combinação de valores para x e y serão apresentados em uma tabela impressa no terminal conforme os exemplos de execução a seguir. Os valores devem ser formatados com o mínimo de 10 caracteres e com precisão de 2 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.10
+A UFOP te contratou para programar o sistema de apuração da eleição para reitor. Para isso, o seu programa deve pedir a lista de nomes dos candidatos (um vetor de strings) e a lista com a quantidade de votos recebidos por cada um dos candidatos (um vetor de inteiros), que serão lidos por meio da função inputVetor e relacionados pelos seus índices.
+
+Estas entradas deverão ser validadas pelas seguintes regras: (a) os dois vetores devem possuir a mesma quantidade de elementos; (b) serão aceitos ao menos 3 candidatos. Observe, nos exemplos de execução, que as mensagens de erro são diferentes para as duas regras anteriores.
+
+Caso as entradas sejam válidas, o programa deve identificar e imprimir o nome do candidato mais votado.
+=====================================================================================================================================================================
+Grau de similaridade: 0.09
+Você trabalha em uma empresa de construção civil e precisa criar um programa em Python para gerenciar os dados de uma obra em andamento. Para isso, você deve criar um vetor de registros que representam as informações dos funcionários que trabalham na obra. Cada funcionário é representado por um registro com os seguintes campos:
+
+Cargo: informação textual do cargo exercido pelo funcionário;
+Salário: valor real que representa o salário bruto recebido pelo funcionário;
+Horas: valor inteiro que representa a quantidade de horas contratada para o funcionário.
+Seu programa deve, inicialmente, perguntar a quantidade de funcionários a serem cadastrados, fazer a entrada dos dados em um vetor de registros de funcionários e emitir relatórios para cargos definidos por entradas do usuário (o programa é encerrado quando o cargo informado for uma string vazia - ""). 
+
+Você deve implementar e usar a função Relatorio, que recebe vetor de funcionários e o cargo como argumento de entrada, calcula e retorna dois valores: o salário total (ST, arredondado para três casas decimais, usando a função round) e o total de horas (TH), considerando apenas funcionários que exercem o cargo informado. Para cada relatório gerado, o programa principal imprime os dados retornados pela função.
+=====================================================================================================================================================================
+Grau de similaridade: 0.09
+Segundo o regimento da UFOP, alunos matriculados em um dado curso, que tiverem frequência maior ou igual a 75% e nota média maior ou igual a 6 durante o semestre, são aprovados. Aqueles que possuírem frequência mínima de 75%, mas nota média abaixo de 6, tem direito a fazer o exame especial. Por outro lado, se a frequência estiver abaixo do mínimo de 75%, o aluno é reprovado por faltas, independentemente de sua nota média.
+
+Implemente um programa que receba a nota média do aluno no semestre (número real) e sua frequência em porcentagem (número inteiro). Como resultado, o programa deverá imprimir o conceito do aluno, dentre três opções: aprovado, exame especial ou reprovado por faltas. No caso de o aluno não ser aprovado, apresente uma justificativa:
+
+Se exame especial, exiba o quanto a nota média está abaixo da mínima (utilizar duas casas decimais).
+Se reprovado por faltas, exiba quantos por cento a frequência está abaixo da mínima.
+=====================================================================================================================================================================
+Grau de similaridade: 0.09
+O valor de S, considerando N termos, pode ser obtido pelo somatório: 
+
+S=∑Ni=11i=11+12+13+14+...+1N
+O valor de P, considerando N termos, pode ser obtido pelo produtório: 
+
+P=∏Ni=121/i=21/1×21/2×21/3×21/4×...×21/N
+Implemente as funções chamadas Somatorio e Produtorio. Ambas recebem como argumento de entrada a quantidade de termos N, calculam e retornam, respectivamente, o valor de S e de P.
+
+Implemente também um programa principal, que fará a leitura de vários valores inteiros para \texttt{N}, enquanto for informado um valor maior do que zero (0). Para cada valor maior do que zero informado, o programa chama as funções Somatorio e Produtorio e imprime o resultado retornado por cada uma delas com uma precisão de 3 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Implemente um programa para armazenar o nome e a nota de vários alunos e informe a situação de cada aluno: aprovado, exame especial ou reprovado. Para isso, o seu programa deve pedir a quantidade de alunos (valor inteiro) que o usuário deseja cadastrar. Em seguida, para cada aluno, o programa deve pedir o nome (valor textual) e a nota (valor real). Cada aluno é representado por um registro diferente, o qual possui os campos nome e nota. Os alunos devem ser armazenados em um vetor. As possíveis situações de um aluno são definidas da seguinte forma:
+
+APROVADO: nota maior ou igual a 6
+EXAME ESPECIAL: nota maior ou igual a 3 e menor do que 6
+REPROVADO: nota menor do que 3
+Ao final da execução do programa, para cada aluno, o nome, a nota (com 2 casas decimais de precisão) e a situação, devem ser exibidos ao usuário. Para obter a situação do aluno, você deve implementar e chamar a função Situacao, que recebe o registro do aluno, avalia a nota e retorna uma string contendo a situação definida pela nota: "APROVADO", "EXAME ESPECIAL" ou "REPROVADO", de acordo com as definições anteriores.
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Crie um programa que lê o peso P (em kg), a altura A (em metros) e a circunferência do quadril Q (em centímetros) de uma pessoa para, em seguida, calcular e imprimir o IMC (Índice de Massa Corporal) e o IAC (Índice de Adiposidade Corpórea) desta pessoa. Note que os valores devem ser impressos com exatamente 3 casas decimais. Utilize as fórmulas a seguir para calcular os valores de IMC e IAC.
+
+IMC=PA2
+IAC=(QA1,5)−18
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Você deve implementar um programa para controlar os pedidos da lanchonete de sua família. O programa inicia pela primeira venda, solicitando a quantidade de itens (inteiro) e em seguida o preço de cada item (real). Com o advento da COVID-19, a lanchonete está fazendo delivery, então, após a definição de todos os itens, o programa pergunta se o pedido é para delivery, esperando para este caso a resposta "sim", considerando consumo no local para qualquer resposta diferente disso. Em caso de delivery, a taxa de R$ 15,00 deve ser acrescentada ao pedido, cujo valor total (com duas casas decimais) será então impresso no terminal. Após finalizar o pedido, o programa faz uma outra pergunta, se o caixa deve ser fechado, novamente esperando uma resposta "sim" para realizar esta ação. Para qualquer resposta diferente disso, o programa inicia um novo pedido. Quando o caixa é fechado, o número de pedidos atendidos, bem como o valor total dos pedidos (com duas casas decimais) deve ser impresso no terminal, e o programa encerrado.
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Implemente um programa para calcular a aceleração de um corpo sendo puxado por uma mola, considerando como entrada a constante elástica da mola (k), a massa do corpo (m) e a extensão a partir da posição inicial (x).
+Fórmulas:
+
+F=k⋅x
+a=Fm
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Você participará de um processo seletivo para estagiário do Dr. Spock na USS Enterprise, e precisa cumprir um desafio proposto por ele a fim de mostrar suas habilidades como programador.
+
+Ele quer que você implemente um programa que vai calcular o período de um pêndulo simples. Para isso, ele te passou a seguinte equação matemática:
+
+T=2∗πLg−−√
+onde: π é a constante de valor 3,14; L é o comprimento do fio; e g é a aceleração de gravidade do planeta.
+
+Você não conhece a aceleração de gravidade do planeta onde está, mas consegue calculá-la pela equação:
+
+g=Pm
+onde: P é a força peso e m é a massa.
+
+O seu programa receberá, como entradas do usuário, os seguintes valores reais: L, P e m. Em seguida, ele calculará a aceleração de gravidade do planeta (g) e o período do pêndulo simples (T). Imprimindo os resultados, conforme os exemplos a seguir, com uma precisão matemática de 3 casas decimais na saída.
+
+Dica: para calcular a raiz quadrada de um número você pode eleva-lo à potência 0,5, ou seja, x−−√=x0,5.
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Uma forma de avaliar a evolução da pandemia de COVID-19 é comparando a média móvel dos casos dos últimos 7 dias (M7) com a média móvel dos casos dos últimos 14 dias (M14).
+Esta comparação é feita pela diferença entre as duas médias móveis (d = M7 - M14), da seguinte maneira:
+
+Calcula-se a diferença d;
+Calcula-se a taxa de crescimento (percentual de d em relação a M14, ou seja, d / M14 × 100);
+Se a taxa de crescimento for negativa:
+Informa-se que os casos diminuíram e o percentual (absoluto) obtido;
+Caso contrário:
+Avalia-se a taxa de crescimento. Se ela for menor ou igual a 15%, considera-se uma situação estável, caso contrário, considera-se situação de aumento de casos.
+Informa-se a situação e o percentual obtido.
+Implemente um programa para avaliar a evolução da pandemia. Inicialmente ele recebe como entradas: a média móvel dos últimos 14 dias (M14, real), o somatório dos casos durante os seis dias anteriores ao dia atual (A6, inteiro) e a quantidade de casos do dia atual (H, inteiro). Para calcular a diferença d, primeiro deve-se calcular a média dos últimos 7 dias (M7), com base nos valores de A6 e H, ou seja, M7 = (A6 + H) / 7. A partir daí o programa deve seguir o algoritmo descrito anteriormente. Observe os exemplos de execução a seguir, note que a taxa de crescimento é impressa com 2 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Antigamente, antes da constituição de 1988, a maioridade civil era de 18 anos para os homens e de 21 anos para as mulheres. Isso mudou em 1988 e hoje é de 18 anos para todos. Mas, considerando a regra antiga, implemente um programa que leia: (i) o nome da pessoa, (ii) sua idade e (iii) a que sexo ela pertence. Posteriormente o programa deve verificar se ela tem maioridade civil ou não. Caso ela ainda não seja maior de idade, o programa deve calcular e informar quantos anos faltam para que ela atinja esta condição.
+=====================================================================================================================================================================
+Grau de similaridade: 0.08
+Seu programa está fazendo tanto sucesso que agora você vai aprimorá-lo ainda mais, adaptando o programa da questão 2. Além de ler as notas dos alunos em um vetor, você também vai ler os nomes dos alunos em um outro vetor. Para cada nota acima da média impressa no terminal, você também vai imprimir o nome do aluno. Dica: os dois vetores - de notas e de nomes - estão associados pelos seus índices e, portanto, a nota do primeiro aluno e seu nome estarão no índice 0 dos dois vetores, enquanto as do segundo aluno estarão no índice 1, e assim por diante.
+
+Além disso, ao final do semestre, deve-se indicar quais alunos têm direito ao Exame Especial: aqueles com nota entre 3 (inclusive) e 6 (exclusive). Com isso, você vai implementar a função exameEspecial, que recebe o vetor de notas como argumento de entrada e retorna um novo vetor, contendo apenas os índices das notas que forem ≥3.0 e <6.0. Você deve imprimir os dados de Exame Especial de forma similar aos das notas acima da média, incluindo, em ambos, os nomes dos respectivos alunos.
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+Crie um programa que leia uma lista de números inteiros do usuário por meio da função inputVetor, e informa, individualmente, se cada número é primo ou não. Um número é dito primo quando ele possui apenas dois divisores: 1 e ele mesmo. Para os que não forem, o programa deve imprimir seus divisores. Para isso, crie a função getDivisores, que recebe como argumento o número que se deseja encontrar os divisores, e retorna um vetor contendo os divisores desse número. Caso o usuário não informe nenhum valor, o programa deve exibir uma mensagem informando que nenhum valor foi digitado.
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+A constante π pode ser calculada por meio da seguinte equação, onde N determina o número de termos considerado no cálculo:
+
+π=∑N−1i=0(−1)i×42×i+1,
+e o volume de uma esfera é calculado pela equação, onde r determina o raio da esfera:
+
+V=43×π×r3.
+
+Crie um programa que calcule a constante π por meio da série indicada acima, mas considerando um número de termos N (inteiro), fornecido pelo usuário. Utilize o valor de π obtido pela série para calcular o volume de uma esfera de raio r (inteiro), também fornecido pelo usuário. Considere que os valores fornecidos pelo usuário são sempre válidos. Como saída, o programa deverá exibir o valor obtido de π e o volume da esfera, ambos com 5 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+Um pedreiro precisa calcular quantos ladrilhos devem ser comprados para cobrir a área de uma sala dada em cm2. Implemente um programa que leia do teclado o tipo do ladrilho e a área da sala. O programa calcula e imprime o número de ladrilhos necessários. Imprima as saídas de dados de acordo com os exemplos de execução. As áreas de cada um dos tipos de ladrilhos disponíveis são dadas na tabela abaixo:
+
+Tipo	Área (cm2) de 1 Ladrilho
+1	80
+2	60
+Dica:
+
+Relembre as funções math.trunc(x), math.ceil(x) e math.floor(x) e escolha uma delas para obter a quantidade correta de ladrilhos após o cálculo (isso porque a divisão pode resultar em um valor real, mas a quantidade de ladrilhos é inteira, por exemplo, se o resultado for 4.1, 4.5, ou 4.9, a quantidade de ladrilhos necessária para todos os casos é 5).
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+Agora você vai criar uma nova versão do programa da questão 1, obtendo as notas dos alunos que estiverem acima da nota média calculada. Para isso, você implementará uma nova função:
+
+acimaValor: recebe como argumentos de entrada um vetor de notas e um valor de corte. A função cria e retorna um novo vetor, contendo os índices dos elementos que tiverem nota maior do que o valor de corte. Dica: crie um vetor vazio, depois avalie cada valor armazenado no vetor de entrada, se o valor em questão for maior que a média, adicione o índice correspondente no novo vetor.
+O programa passará a imprimir as notas acima da média, seguindo o algoritmo:
+
+Executar os passos 1 a 3 do algoritmo da questão 1.
+Chamar a função acimaValor (implementada por você) passando como argumento o vetor de notas e a média das notas obtida no passo 2 do algoritmo da questão 1, e recebendo o vetor resultante;
+Imprimir cada índice e nota que estiver acima da média, usando os vetores de índices e de notas. Observe que é necessário formatar as notas para uma casa decimal.
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+Você empresta dinheiro com cobrança de juros simples, que é calculada da seguinte forma: J=C×t×m, onde: J é o valor dos juros devido; C é o capital emprestado; t é a taxa de juros do período; e m é a quantidade de meses para quitação da dívida.
+
+A taxa de juros depende do capital emprestado: para valores menores ou iguais a R$ 10.000,00, a taxa de juros é de 10% ao mês (ou seja, t=0,1), já para valores maiores do que R$ 10.000,00, a taxa de juros é de 7% ao mês (ou seja, t=0,07).
+
+Implemente um programa que receba inicialmente o valor de capital total (T, real) que você possui para fazer empréstimos. Em seguida, você vai realizar empréstimos enquanto tiver capital total suficiente. A cada empréstimo realizado você recebe duas entradas: C (real) e m (inteiro); e determina a taxa de juros t, levando em consideração o valor do capital emprestado, calcula o valor de juros devido e imprime a taxa de juros aplicada (valor percentual, com 0 casas decimais), o juros devido calculado (J, com 2 casas decimais) e o valor total da dívida (soma do capital emprestado e o juros devido, também com 2 casas decimais). Ao final de cada empréstimo, você atualiza seu capital total (T=T−C). O programa encerra no momento exato em que um valor do capital total T for insuficiente para fornecer o empréstimo pretendido C, imprimindo uma mensagem de encerramento com o capital total final (com duas casas decimais). Observe que, neste caso, o empréstimo é negado, m não é solicitado, e o programa é encerrado.
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+Seu professor de matemática te pediu para criar um programa que realize a soma de duas matrizes, para auxiliar os seus alunos. Para isso, o seu programa deve ler as duas matrizes, que são compostas por valores inteiros, por meio da função inputMatriz. Caso as duas matrizes não tenham as mesmas dimensões, uma mensagem informando que não é possível somar as matrizes deve ser exibida ao usuário. Caso contrário, o programa deve chamar a função somaMatriz, implementada por você, que recebe como argumentos duas matrizes e retorna uma matriz resultante da soma destas duas matrizes. Ao final da execução do seu programa, a matriz resultante deve ser exibida ao usuário.
+=====================================================================================================================================================================
+Grau de similaridade: 0.07
+Em um laboratório de pequisa de termodinâmica são realizados vários experimentos. A cada experimento, obtém-se duas temperaturas em Celsius, a temperatura inicial (TIc) e a temperatura final (TFc), e pretende-se calcular a variação de entropia entre elas. Para calcular a variação de entropia, primeiro as duas temperaturas precisam ser convertidas para Kelvin, usando a equação: Tk=Tc+273, onde Tk é a temperatura em Kelvin e Tc é a temperatura em Celsius. Considerando TIk e TFk as temperaturas inicial e final convertidas para Kelvin, a variação de entropia entre elas é dado pela equação: VE=R∗loge(TFkTIk), onde R é a constante universal dos gases ideais, cujo valor aproximado é 8,314 J/(mol K).
+
+Implemente uma função chamada variacaoEntropia, que recebe as duas temperaturas em Celsius (TIc e TFc), calcula e retorna o valor da variação de entropia entre elas, conforme descrito anteriormente.  Implemente também um programa principal que possibilita a realização de vários experimentos. Inicialmente, o programa solicita a quantidade de experimentos como uma entrada do usuário (número inteiro), em seguida, para cada experimento, ele solicita as duas temperaturas em Celsius como entradas do usuário (números reais), chama a função variacaoEntropia e imprime o resultado com 3 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.06
+Implemente um programa para ler a quantidade de lados (q, inteiro) de um polígono regular, e a medida do lado (L, real), classificar o polígono, calcular e imprimir o valor da área (A, com duas casas decimais), conforme as descrições a seguir:
+
+q<3, "Não é um polígono";
+q igual a 3, "triângulo" com área: A=L2×3√4;
+q igual a 4, "quadrado" com área: A=L2;
+q igual a 5, "pentágono" com área: A=5×L24×tan(0,6283);
+q igual a 6, "hexágono" com área: A=3×L2×3√2;
+q>6, "Polígono não identificado".
+Veja os exemplos de execução a seguir, observe que a medida do lado é solicitada apenas quando o polígono é válido, ou seja, primeiro é necessário avaliar a quantidade de lados e: (a) imprimir uma das mensagens de entrada inválida; ou (b) solicitar a medida do lado e realizar o processamento.
+=====================================================================================================================================================================
+Grau de similaridade: 0.06
+Você foi contratado por uma empresa química que precisa resolver algumas fórmulas matemáticas para desenvolver produtos químicos. Você foi o escolhido para encontrar o fatorial de um número. Calcular o fatorial de um número só faz sentido quando estamos trabalhando com números naturais. Essa operação é bastante comum na análise combinatória, facilitando o cálculo de arranjos, permutações, combinações e demais problemas envolvendo contagem. O fatorial é representado pelo símbolo "!". Definimos como n! (n fatorial) a multiplicação sucessiva de n por todos os seus antecessores até chegar em 1. A equação do fatorial pode ser definida como: n! = n×(n−1)×(n−2)×...×3×2×1. Observe que o número definido é sempre inteiro, mas, o programa "força" a entrada de um número maior do que 0 (zero).
+=====================================================================================================================================================================
+Grau de similaridade: 0.06
+A nota semestral dos alunos é obtida de acordo com o cálculo descrito a seguir:
+
+NS=AV1+AV2
+onde: 
+
+AV1=0,3PT1+0,15EP1;
+AV2=0,4PT2+0,15EP2;
+PT1 e PT2 são provas teóricas unificadas, com nota entre 0 e 10;
+EP1 e EP2 são atividades distribuídas pelos professores, com nota entre 0 e 10.
+Implemente um programa que leia, como entradas dos usuários, os valores reais das notas PT1, PT2, EP1 e EP2. O programa calcula o valor das avaliações parciais AV1 e AV2, e da nota do semestre NS. Em seguida, ele imprime os resultados no terminal com uma precisão de 2 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.06
+Sua tia vende dois tipos de salgados, coxinha e quibe. Com o aumento dos pedidos, ela contrata vendedores temporários. Ela deseja premiar o vendedor que conseguir o maior lucro e dispensar o que conseguir o menor lucro. A fim de ajudá-la nesta tarefa, você vai implementar um programa que funciona da seguinte forma:
+
+Faz a leitura de quantas unidades de coxinhas foram vendidas por cada vendedor, utilizando a função inputVetor;
+Realiza o mesmo procedimento anterior para o preenchimento das vendas de quibe. Dica: Os dois vetores estão associados pelos seus índices, ou seja, o índice 0 dos dois vetores armazena as vendas de cada salgado para o primeiro vendedor, o índice 1 armazena as vendas do segundo vendedor e assim por diante;
+Valida os dois vetores, verificando se eles possuem a mesma quantidade de elementos. Caso inválido, imprime a mensagem "Dados de vendas inválidos". Caso contrário:
+Lê dois valores reais, representando os valores dos lucros por unidade de coxinha e de quibe, respectivamente;
+Preenche um terceiro vetor, contendo o valor arrecadado por cada vendedor. Para isso, você deve implementar a função calculaLucros, que recebe os dois vetores de vendas e os dois valores de lucro, e retorna um vetor contendo o lucro total de cada vendedor. Arredonde os valores dos lucros totais para duas casas decimais, usando a função round(valor, 2);
+Imprime o vetor preenchido no item anterior, usando a função print. Observe que os valores dos lucros foram arredondados na função, então, não é necessário realizar formatação dos números na impressão;
+Determina e imprime o maior e o menor lucros armazenados no vetor, formatando os valores com 2 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.06
+Você é o gerente de uma grande loja de atacado e pretende dar um desconto especial para o produto mais vendido nos últimos dias. Como esta promoção será aplicada várias vezes, em períodos distintos, você vai implementar um programa para determinar o produto escolhido. Primeiro você fará a leitura dos nomes dos produtos em um vetor e em seguida a leitura das vendas diárias de cada produto durante um período. Nesta matriz, as linhas representam os produtos e as colunas representam os dias. Os produtos estão relacionados pelo índice do vetor e o índice da linha da matriz.
+
+Após as leituras do vetor e da matriz, o programa calcula o total de vendas de cada produto, identifica o produto selecionado (verificando qual deles foi o mais vendido) e imprime o resultado no terminal.
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+Você empresta dinheiro com cobrança de juros simples, que é calculada da seguinte forma:
+
+J=C×t×m
+onde: J é o valor dos juros devido; C é o capital emprestado; t é a taxa de juros do período; e m é a quantidade de meses para quitação da dívida.
+
+A taxa de juros depende do capital emprestado: para valores menores ou iguais a R$ 10.000,00, a taxa de juros é de 10% ao mês (ou seja, t=0,1), já para valores maiores do que R$ 10.000,00, a taxa de juros é de 7% ao mês (ou seja, t=0,07).
+
+Implemente um programa que receba como entradas os valores de: C (real) e m (inteiro). Em seguida ele determina a taxa de juros t, levando em consideração o valor do capital emprestado, e calcula o valor de juros devido. Ao final, o programa imprime a taxa de juros aplicada (valor percentual, com 0 casas decimais), o juros devido calculado (J, com 2 casas decimais) e o valor total da dívida (soma do capital emprestado e o juros devido, também com 2 casas decimais).
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+Você deve implementar um programa que realiza a leitura das notas dos alunos em avaliações de BCC701, preenchendo uma matriz de valores reais com a função inputMatriz. As linhas representam os alunos, as colunas representam as avaliações e os valores armazenados representam as notas. A partir desta matriz, você deve processar e imprimir as seguintes informações: 
+
+Menor nota e os índices de ocorrências da menor nota;
+Maior nota e os índices de ocorrências da maior nota.
+Sua resposta deve conter as mensagens exatamente como definidas nos exemplos de execução. Observe que os índices de ocorrências de menor e maior nota estão no formato: [índice do aluno][índice da avaliação].
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+Seu professor de matemática te pediu para criar um programa que calcula a distância entre dois pontos, para auxiliar os seus alunos. Para isso, seu programa deve pedir as coordenadas dos dois pontos (A e B). Cada ponto, é um registro que possui dois campos, representando as coordenadas X e Y, que são valores reais. A reta é também um registro com dois campos, um para representar o ponto A e o outro o ponto B. Após o preenchimento dos dois registros, o programa deve chamar a função calculaComprimento, definida em seu programa, que recebe como argumento o registro que representa a reta, calcula e retorna o comprimento da reta por meio da expressão: C=(BX−AX)2+(BY−AY)2−−−−−−−−−−−−−−−−−−−−−√. Ao final da execução do programa, o comprimento da reta deve ser exibido ao usuário com precisão de 2 casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+A diagonal principal de uma matriz quadrada é composta pelos elementos que se encontram na mesma linha e mesma coluna. Conforme o exemplo a seguir, onde os valores destacados em cinza e negrito estão na diagonal principal:
+
+3	5	1	8
+7	1	-3	4
+0	3	2	0
+10	-2	0	9
+Faça um programa que recebe os elementos de uma matriz (valores inteiros) com a função inputMatriz e imprime os valores dos elementos que estão na diagonal principal. Caso a matriz não seja quadrada, uma mensagem deve ser impressa, conforme o exemplo de execução 1.
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+Um engenheiro civil é responsável pelo cálculo de algumas métricas de um projeto de construção. Para ajudá-lo, você implementará um programa responsável pelo cálculo da quantidade de material necessário para construir uma parede.
+
+Você deve implementar a função calculosParede conforme descrito a seguir. A função recebe como argumentos de entrada a largura (Lp) e a altura (Hp) da parede em centímetros (números reais). Calcula e retorna a quantidade de tijolos e de sacos de argamassa necessários. Para isso, primeiro calcule a área da parede (Ap = Lp x Hp) e defina o tipo de tijolo conforme a tabela abaixo. Dado o tipo de tijolo, calcule a quantidade de tijolos pela equação: Ap / At, onde At corresponde à área do tijolo, definida na tabela. Em seguida, calcule a quantidade de sacos de argamassa necessários pela equação: Ap / G, onde G é a proporção de argamassa para cada tipo de tijolo, também definido na tabela abaixo. Observe que as quantidades de tijolo e sacos definidos nos cálculos anteriores são números reais. Portanto, a função deve arrendondar estes valores para cima. Ao final, a função retorna três valores: o tipo de tijolo, a quantidade de tijolos e a quantidade de sacos de argamassa. Tabela de tipos de tijolos por área de parede:
+
+Tipo de Tijolo	Área da Parede (Ap)	Área do Tijolo (At)	Proporção de Argamassa (G)
+A	≤ 60.000,0 cm2	9 × 19 = 171,0 cm2	1000
+B	> 60.000,0 e ≤ 90.000,0 cm2	10 × 20 = 200,0 cm2	1200
+C	> 90.000,0 cm2	12 × 25 = 300,0 cm2	1400
+O programa principal deverá solicitar a largura e altura de várias paredes, enquanto os dois valores forem maiores do que zero. Para cada parede, ele deve chamar a função e imprimir os valores retornados por ela.
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+Uma turma de estudantes está planejando uma festa de formatura. Eles decidiram contratar um serviço de buffet que oferece opções de refeição vegetariana e não vegetariana. A proporção de estudantes que preferem refeição vegetariana é diferente entre os gêneros. Das alunas do sexo feminino, 20% preferem refeição vegetariana, enquanto entre os alunos do sexo masculino, apenas 10% preferem essa opção.
+
+Você deve implementar a função chamada ValorProporcional, que recebe como argumentos de entrada a quantidade de estudantes (Q) e a porcentagem (P) a ser considerada, ela calcula e retorna o valor proporcional (V = Q x P / 100). O valor proporcional V deve ser um valor inteiro, então a função deve retornar um valor arredondado (valor inteiro mais próximo de V).
+
+Faça um programa principal cujas entradas são a quantidade de mulheres e homens na turma (valores inteiros) e, considerando a porcentagem de preferência por refeição vegetariana entre os gêneros, faça: (1) Defina o valor proporcional de alunas que preferem refeição vegetariana (chamando a função ValorProporcional) e imprima o resultado; (2) Defina o valor proporcional de alunos que preferem refeição vegetariana (chamando a função ValorProporcional) e imprima o resultado; (3) Defina a proporção geral de estudantes da turma que preferem refeição vegetariana (com uma precisão de uma casa decimal), calculando a porcentagem de pessoas veganas sobre o total de pessoas (juntando homens e mulheres), e imprima o resultado.
+=====================================================================================================================================================================
+Grau de similaridade: 0.05
+Segundo uma tabela médica, o peso ideal está relacionado com a altura e o sexo de uma pessoa. Implemente um programa que receba como entradas a altura (número real) e o sexo (valor textual); a seguir ele calcula e imprime o peso ideal dessa pessoa, utilizando as seguintes fórmulas:
+
+Para o sexo masculino: (72,7×H)−58
+Para o sexo feminino: (62,1×H)−44,7
+=====================================================================================================================================================================
+Grau de similaridade: 0.04
+Uma competição internacional de ciclismo é baseada em percursos de quilometragens distintas. Os organizadores precisam divulgar o tamanho dos percursos para os competidores, mas estão com muita dificuldade de comunicação. Eles são de países distintos, que lidam com unidades de medida diferentes, Metro (m), Pé (ft) e Jarda (yd). Você, como bom brasileiro, resolveu ajudá-los, e implementará um programa que fará a leitura do tamanho dos percursos em metros e informará o tamanho deles em Pés e Jardas.
+
+Para isso, você implementará uma função chamada converteMedidas, que receberá como entrada o tamanho do percurso em metros (M) e retornará os resultados das conversões para pés (FT) e jardas (YD). Um pé equivale a 0,3048 m (ou seja, FT=0,3048×M. Por outro lado, uma jarda equivale a 0,9144 m (ou seja YD=0,9144∗M).
+
+Você também implementará um programa principal, que começará perguntando quantos percursos serão realizados, e depois fará as entradas do usuário para o tamanho dos percursos, em metros (valor real). Para cada percurso ele chamará a função converteMedidas e imprimirá os valores convertidos no terminal, com duas casas decimais.
+=====================================================================================================================================================================
+Grau de similaridade: 0.04
+Você foi contrato por uma empresa para elaborar um sistema que calcule as deduções no salário de seus colaboradores. O programa deve pedir o salário bruto do funcionário (número real) e então calcular o seu salário líquido com base nas deduções ao INSS, que corresponde a 10% do salário bruto, e o imposto de renda, que depende do salário bruto da seguinte forma:
+
+Salário bruto até 1500 (inclusive): isento;
+Salário bruto até 2500 (inclusive): desconto de 5%;
+Salário bruto até 4500 (inclusive): desconto de 10%;
+Salário bruto acima de 4500: desconto de 20% do salário bruto.
+Para o cálculo do imposto de renda, você deve criar a função impostoRenda, que recebe como argumento de entrada o salário bruto (B) do colaborador (número real), calcula e retorna a dedução relacionada ao imposto de renda (D), conforme descrição anterior. Ao final do cálculo das deduções, imprima na tela todas as informações, com duas casas de precisão, informando também o FGTS, que corresponde a 11% do salário bruto, mas que não é descontado (pois ele é depositado pela empresa).
+=====================================================================================================================================================================
+Grau de similaridade: 0.04
+Uma feirante está vendendo frutas com a seguinte tabela de preços:
+
+ 	Até 5 kg	acima de 5 kg
+Morango	R$ 2,50 por kg	R$ 2,20 por kg
+Maçã	R$ 1,80 por kg	R$ 1,50 por kg
+Implemente um programa para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maçãs adquiridas, ambos números reais, e escrever o valor a ser pago pelo cliente (com precisão de duas casas decimais). Se o cliente fornecer pelo menos uma das quantidades menor do que 0 (zero), a mensagem "Entrada inválida" deve ser exibida no terminal.
+=====================================================================================================================================================================
+Grau de similaridade: 0.04
+A matriz identidade é a matriz quadrada em que os elementos da diagonal principal são iguais a 1 e os demais elementos são iguais a 0, conforme o exemplo a seguir, onde os valores 1 estão na diagonal principal, destacados em cinza e negrito:
+
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+Faça um programa que recebe os elementos de uma matriz (valores inteiros) com a função inputMatriz e verifica se a matriz é classificada como identidade.
+=====================================================================================================================================================================
+Grau de similaridade: 0.03
+Em matemática, nomeadamente em teoria dos números, um terno pitagórico (ou trio pitagórico, ou ainda tripla pitagórica) é formado por três números naturais a, b e c tais que:
+
+a2+b2=c2
+O nome vem do teorema de Pitágoras que afirma que se as medidas dos lados de um triângulo retângulo são números inteiros, então essas medidas são um terno pitagórico.
+
+Implemente um programa que leia 3 números inteiros e verifique se os números representam um terno pitagórico. Para implementar seu programa, utilize o seguinte fluxograma:
+=====================================================================================================================================================================

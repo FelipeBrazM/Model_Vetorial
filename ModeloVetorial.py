@@ -22,6 +22,18 @@ def read_questions_from_folder(folder_path):
                 questions.append(question)
     return questions
 
+# Função para perguntar se deseja salvar as respostas e salvar em um arquivo se sim
+def ask_to_save_results(results):
+    save_results = input("Deseja salvar os resultados em um arquivo .txt? (s/n): ").strip().lower()
+    if save_results == 's':
+        output_file = "resultados_consulta.txt"
+        with open(output_file, 'w', encoding='utf-8') as file:
+            for doc, similarity in results:
+                if similarity != 0.0:
+                    file.write(f"Grau de similaridade: {similarity:.2f}\n{doc}\n")
+                    file.write("=====================================================================================================================================================================\n")
+        print(f"Resultados salvos em {output_file}\n")
+
 # Use a função para ler as questões da pasta 'questions_OP'
 folder_path = 'questions_OP'
 documents = read_questions_from_folder(folder_path)
@@ -48,7 +60,6 @@ processed_documents = [preprocess(doc) for doc in tokenized_documents]
 # Segundo passo: Calcular o TF-IDF 
 preprocessed_documents = [' '.join(doc) for doc in processed_documents]
 preprocessed_query = ' '.join(processed_query)
-#print("\n", preprocessed_query, "\n")
 
 # Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
@@ -75,3 +86,6 @@ for doc, similarity in results:
 # Se não encontrar nenhum documento com similaridade com a entrada printa essa mensagem para o usuário
 if not found:
     print(f"Nenhum resultado encontrado na base de dados para essa consulta!\n")
+
+# Pergunta ao usuário se deseja salvar os resultados
+ask_to_save_results(results)
