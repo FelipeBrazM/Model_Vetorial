@@ -1,0 +1,8 @@
+Agora você vai criar uma nova versão do programa da questão 1, obtendo as notas dos alunos que estiverem acima da nota média calculada. Para isso, você implementará uma nova função:
+
+acimaValor: recebe como argumentos de entrada um vetor de notas e um valor de corte. A função cria e retorna um novo vetor, contendo os índices dos elementos que tiverem nota maior do que o valor de corte. Dica: crie um vetor vazio, depois avalie cada valor armazenado no vetor de entrada, se o valor em questão for maior que a média, adicione o índice correspondente no novo vetor.
+O programa passará a imprimir as notas acima da média, seguindo o algoritmo:
+
+Executar os passos 1 a 3 do algoritmo da questão 1.
+Chamar a função acimaValor (implementada por você) passando como argumento o vetor de notas e a média das notas obtida no passo 2 do algoritmo da questão 1, e recebendo o vetor resultante;
+Imprimir cada índice e nota que estiver acima da média, usando os vetores de índices e de notas. Observe que é necessário formatar as notas para uma casa decimal.

@@ -1,0 +1,7 @@
+A matriz identidade é a matriz quadrada em que os elementos da diagonal principal são iguais a 1 e os demais elementos são iguais a 0, conforme o exemplo a seguir, onde os valores 1 estão na diagonal principal, destacados em cinza e negrito:
+
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+Faça um programa que recebe os elementos de uma matriz (valores inteiros) com a função inputMatriz e verifica se a matriz é classificada como identidade.

@@ -1,0 +1,4 @@
+Crie um programa que lê o peso P (em kg), a altura A (em metros) e a circunferência do quadril Q (em centímetros) de uma pessoa para, em seguida, calcular e imprimir o IMC (Índice de Massa Corporal) e o IAC (Índice de Adiposidade Corpórea) desta pessoa. Note que os valores devem ser impressos com exatamente 3 casas decimais. Utilize as fórmulas a seguir para calcular os valores de IMC e IAC.
+
+IMC=PA2
+IAC=(QA1,5)−18

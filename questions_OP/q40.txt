@@ -1,0 +1,9 @@
+Implemente um programa para ler a quantidade de lados (q, inteiro) de um polígono regular, e a medida do lado (L, real), classificar o polígono, calcular e imprimir o valor da área (A, com duas casas decimais), conforme as descrições a seguir:
+
+q<3, "Não é um polígono";
+q igual a 3, "triângulo" com área: A=L2×3√4;
+q igual a 4, "quadrado" com área: A=L2;
+q igual a 5, "pentágono" com área: A=5×L24×tan(0,6283);
+q igual a 6, "hexágono" com área: A=3×L2×3√2;
+q>6, "Polígono não identificado".
+Veja os exemplos de execução a seguir, observe que a medida do lado é solicitada apenas quando o polígono é válido, ou seja, primeiro é necessário avaliar a quantidade de lados e: (a) imprimir uma das mensagens de entrada inválida; ou (b) solicitar a medida do lado e realizar o processamento.

@@ -1,0 +1,10 @@
+A nota semestral dos alunos é obtida de acordo com o cálculo descrito a seguir:
+
+NS=AV1+AV2
+onde: 
+
+AV1=0,3PT1+0,15EP1;
+AV2=0,4PT2+0,15EP2;
+PT1 e PT2 são provas teóricas unificadas, com nota entre 0 e 10;
+EP1 e EP2 são atividades distribuídas pelos professores, com nota entre 0 e 10.
+Implemente um programa que leia, como entradas dos usuários, os valores reais das notas PT1, PT2, EP1 e EP2. O programa calcula o valor das avaliações parciais AV1 e AV2, e da nota do semestre NS. Em seguida, ele imprime os resultados no terminal com uma precisão de 2 casas decimais. 

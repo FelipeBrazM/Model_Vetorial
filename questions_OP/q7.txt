@@ -1,0 +1,7 @@
+Você foi contrato por uma empresa para elaborar um sistema que calcule as deduções no salário de seus colaboradores. O programa deve pedir o salário bruto do funcionário (número real) e então calcular o seu salário líquido com base nas deduções ao INSS, que corresponde a 10% do salário bruto, e o imposto de renda, que depende do salário bruto da seguinte forma:
+
+Salário bruto até 1500 (inclusive): isento;
+Salário bruto até 2500 (inclusive): desconto de 5%;
+Salário bruto até 4500 (inclusive): desconto de 10%;
+Salário bruto acima de 4500: desconto de 20% do salário bruto.
+Para o cálculo do imposto de renda, você deve criar a função impostoRenda, que recebe como argumento de entrada o salário bruto (B) do colaborador (número real), calcula e retorna a dedução relacionada ao imposto de renda (D), conforme descrição anterior. Ao final do cálculo das deduções, imprima na tela todas as informações, com duas casas de precisão, informando também o FGTS, que corresponde a 11% do salário bruto, mas que não é descontado (pois ele é depositado pela empresa).

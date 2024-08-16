@@ -1,0 +1,6 @@
+Implemente um programa para armazenar o nome e a nota de vários alunos e informe a situação de cada aluno: aprovado, exame especial ou reprovado. Para isso, o seu programa deve pedir a quantidade de alunos (valor inteiro) que o usuário deseja cadastrar. Em seguida, para cada aluno, o programa deve pedir o nome (valor textual) e a nota (valor real). Cada aluno é representado por um registro diferente, o qual possui os campos nome e nota. Os alunos devem ser armazenados em um vetor. As possíveis situações de um aluno são definidas da seguinte forma:
+
+APROVADO: nota maior ou igual a 6
+EXAME ESPECIAL: nota maior ou igual a 3 e menor do que 6
+REPROVADO: nota menor do que 3
+Ao final da execução do programa, para cada aluno, o nome, a nota (com 2 casas decimais de precisão) e a situação, devem ser exibidos ao usuário. Para obter a situação do aluno, você deve implementar e chamar a função Situacao, que recebe o registro do aluno, avalia a nota e retorna uma string contendo a situação definida pela nota: "APROVADO", "EXAME ESPECIAL" ou "REPROVADO", de acordo com as definições anteriores.

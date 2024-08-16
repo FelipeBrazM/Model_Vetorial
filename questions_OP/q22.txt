@@ -1,0 +1,5 @@
+Você deve implementar um programa que realiza a leitura das notas dos alunos em avaliações de BCC701, preenchendo uma matriz de valores reais com a função inputMatriz. As linhas representam os alunos, as colunas representam as avaliações e os valores armazenados representam as notas. A partir desta matriz, você deve processar e imprimir as seguintes informações: 
+
+Menor nota e os índices de ocorrências da menor nota;
+Maior nota e os índices de ocorrências da maior nota.
+Sua resposta deve conter as mensagens exatamente como definidas nos exemplos de execução. Observe que os índices de ocorrências de menor e maior nota estão no formato: [índice do aluno][índice da avaliação].

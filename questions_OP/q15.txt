@@ -1,0 +1,9 @@
+Sua tia vende dois tipos de salgados, coxinha e quibe. Com o aumento dos pedidos, ela contrata vendedores temporários. Ela deseja premiar o vendedor que conseguir o maior lucro e dispensar o que conseguir o menor lucro. A fim de ajudá-la nesta tarefa, você vai implementar um programa que funciona da seguinte forma:
+
+Faz a leitura de quantas unidades de coxinhas foram vendidas por cada vendedor, utilizando a função inputVetor;
+Realiza o mesmo procedimento anterior para o preenchimento das vendas de quibe. Dica: Os dois vetores estão associados pelos seus índices, ou seja, o índice 0 dos dois vetores armazena as vendas de cada salgado para o primeiro vendedor, o índice 1 armazena as vendas do segundo vendedor e assim por diante;
+Valida os dois vetores, verificando se eles possuem a mesma quantidade de elementos. Caso inválido, imprime a mensagem "Dados de vendas inválidos". Caso contrário:
+Lê dois valores reais, representando os valores dos lucros por unidade de coxinha e de quibe, respectivamente;
+Preenche um terceiro vetor, contendo o valor arrecadado por cada vendedor. Para isso, você deve implementar a função calculaLucros, que recebe os dois vetores de vendas e os dois valores de lucro, e retorna um vetor contendo o lucro total de cada vendedor. Arredonde os valores dos lucros totais para duas casas decimais, usando a função round(valor, 2);
+Imprime o vetor preenchido no item anterior, usando a função print. Observe que os valores dos lucros foram arredondados na função, então, não é necessário realizar formatação dos números na impressão;
+Determina e imprime o maior e o menor lucros armazenados no vetor, formatando os valores com 2 casas decimais.

@@ -1,0 +1,5 @@
+Dado um objeto em queda livre, calcular a velocidade em um instante de tempo e a distância total percorrida desde o início da queda, tendo como a entrada do usuário o instante de tempo t. Fórmulas:
+
+g=9,807
+v=g⋅t
+s=g⋅t22

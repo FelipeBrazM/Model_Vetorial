@@ -1,0 +1,8 @@
+Você faz parte do grêmio estudantil de química da UFOP e pretende substituir o sistema de votação em papel por um sistema de eleição eletrônica. Para isso, você deve desenvolver um programa que fará o seguinte:
+
+Ler os dados de 2 candidatos (nome e número);
+Ler a quantidade de eleitores fazendo a sua validação: enquanto a quantidade for inferior a 3, informar ao usuário que esta quantidade é inválida e solicitar uma nova quantidade de eleitores.
+Imprimir a mensagem de votação iniciada;
+Fazer a leitura de todos os votos, contabilizando: votos válidos, votos inválidos, votos para o candidato 1 e votos para o candidato 2;
+Imprimir a mensagem de votação encerrada;
+Imprimir o resultado da apuração, contento o percentual de votos válidos e inválidos, além dos percentuais de cada candidato sobre os votos válidos, conforme os exemplos a seguir. Note que todos os valores percentuais estão com 2 casas decimais. DICA: a divisão por zero acarreta em um erro de execução, portanto, é necessário verificar a quantidade de votos antes de calcular um percentual.

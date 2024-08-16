@@ -1,0 +1,11 @@
+Uma forma de avaliar a evolução da pandemia de COVID-19 é comparando a média móvel dos casos dos últimos 7 dias (M7) com a média móvel dos casos dos últimos 14 dias (M14).
+Esta comparação é feita pela diferença entre as duas médias móveis (d = M7 - M14), da seguinte maneira:
+
+Calcula-se a diferença d;
+Calcula-se a taxa de crescimento (percentual de d em relação a M14, ou seja, d / M14 × 100);
+Se a taxa de crescimento for negativa:
+Informa-se que os casos diminuíram e o percentual (absoluto) obtido;
+Caso contrário:
+Avalia-se a taxa de crescimento. Se ela for menor ou igual a 15%, considera-se uma situação estável, caso contrário, considera-se situação de aumento de casos.
+Informa-se a situação e o percentual obtido.
+Implemente um programa para avaliar a evolução da pandemia. Inicialmente ele recebe como entradas: a média móvel dos últimos 14 dias (M14, real), o somatório dos casos durante os seis dias anteriores ao dia atual (A6, inteiro) e a quantidade de casos do dia atual (H, inteiro). Para calcular a diferença d, primeiro deve-se calcular a média dos últimos 7 dias (M7), com base nos valores de A6 e H, ou seja, M7 = (A6 + H) / 7. A partir daí o programa deve seguir o algoritmo descrito anteriormente. Observe os exemplos de execução a seguir, note que a taxa de crescimento é impressa com 2 casas decimais.

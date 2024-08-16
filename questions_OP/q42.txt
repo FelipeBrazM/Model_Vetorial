@@ -1,0 +1,6 @@
+Segundo o regimento da UFOP, alunos matriculados em um dado curso, que tiverem frequência maior ou igual a 75% e nota média maior ou igual a 6 durante o semestre, são aprovados. Aqueles que possuírem frequência mínima de 75%, mas nota média abaixo de 6, tem direito a fazer o exame especial. Por outro lado, se a frequência estiver abaixo do mínimo de 75%, o aluno é reprovado por faltas, independentemente de sua nota média.
+
+Implemente um programa que receba a nota média do aluno no semestre (número real) e sua frequência em porcentagem (número inteiro). Como resultado, o programa deverá imprimir o conceito do aluno, dentre três opções: aprovado, exame especial ou reprovado por faltas. No caso de o aluno não ser aprovado, apresente uma justificativa:
+
+Se exame especial, exiba o quanto a nota média está abaixo da mínima (utilizar duas casas decimais).
+Se reprovado por faltas, exiba quantos por cento a frequência está abaixo da mínima.

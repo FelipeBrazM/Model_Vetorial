@@ -1,0 +1,9 @@
+Um engenheiro civil é responsável pelo cálculo de algumas métricas de um projeto de construção. Para ajudá-lo, você implementará um programa responsável pelo cálculo da quantidade de material necessário para construir uma parede.
+
+Você deve implementar a função calculosParede conforme descrito a seguir. A função recebe como argumentos de entrada a largura (Lp) e a altura (Hp) da parede em centímetros (números reais). Calcula e retorna a quantidade de tijolos e de sacos de argamassa necessários. Para isso, primeiro calcule a área da parede (Ap = Lp x Hp) e defina o tipo de tijolo conforme a tabela abaixo. Dado o tipo de tijolo, calcule a quantidade de tijolos pela equação: Ap / At, onde At corresponde à área do tijolo, definida na tabela. Em seguida, calcule a quantidade de sacos de argamassa necessários pela equação: Ap / G, onde G é a proporção de argamassa para cada tipo de tijolo, também definido na tabela abaixo. Observe que as quantidades de tijolo e sacos definidos nos cálculos anteriores são números reais. Portanto, a função deve arrendondar estes valores para cima. Ao final, a função retorna três valores: o tipo de tijolo, a quantidade de tijolos e a quantidade de sacos de argamassa. Tabela de tipos de tijolos por área de parede:
+
+Tipo de Tijolo	Área da Parede (Ap)	Área do Tijolo (At)	Proporção de Argamassa (G)
+A	≤ 60.000,0 cm2	9 × 19 = 171,0 cm2	1000
+B	> 60.000,0 e ≤ 90.000,0 cm2	10 × 20 = 200,0 cm2	1200
+C	> 90.000,0 cm2	12 × 25 = 300,0 cm2	1400
+O programa principal deverá solicitar a largura e altura de várias paredes, enquanto os dois valores forem maiores do que zero. Para cada parede, ele deve chamar a função e imprimir os valores retornados por ela.

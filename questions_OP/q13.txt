@@ -1,0 +1,5 @@
+A UFOP te contratou para programar o sistema de apuração da eleição para reitor. Para isso, o seu programa deve pedir a lista de nomes dos candidatos (um vetor de strings) e a lista com a quantidade de votos recebidos por cada um dos candidatos (um vetor de inteiros), que serão lidos por meio da função inputVetor e relacionados pelos seus índices.
+
+Estas entradas deverão ser validadas pelas seguintes regras: (a) os dois vetores devem possuir a mesma quantidade de elementos; (b) serão aceitos ao menos 3 candidatos. Observe, nos exemplos de execução, que as mensagens de erro são diferentes para as duas regras anteriores.
+
+Caso as entradas sejam válidas, o programa deve identificar e imprimir o nome do candidato mais votado.

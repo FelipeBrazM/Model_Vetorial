@@ -1,0 +1,5 @@
+Você deve implementar um programa que realiza a leitura das notas dos alunos de BCC701, preenchendo um vetor de valores reais (sempre haverá pelo menos uma nota). A partir deste vetor, você deve imprimir as seguintes estatísticas da turma: (i) maior nota; (ii) menor nota; (iii) média das notas. Para obter estes valores, você deve implementar a função estatNotas, que recebe o vetor de notas como argumento de entrada, calcula e retorna os três valores (na ordem definida anteriormente). Sendo assim, o seu programa principal seguirá o algoritmo:
+
+Ler os valores do vetor chamando a função inputVetor;
+Chamar a função estatNotas (implementada por você);
+Imprimir os valores retornados pela função estatNotas no terminal (com uma casa decimal).

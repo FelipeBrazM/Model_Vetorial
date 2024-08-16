@@ -1,0 +1,5 @@
+Implemente um programa para calcular a aceleração de um corpo sendo puxado por uma mola, considerando como entrada a constante elástica da mola (k), a massa do corpo (m) e a extensão a partir da posição inicial (x).
+Fórmulas:
+
+F=k⋅x
+a=Fm

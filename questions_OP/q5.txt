@@ -1,0 +1,5 @@
+O valor da função matemática f(x,y) é definido da seguinte forma:
+
+Implemente um programa que avalia o valor da função f para valores de x e y definidos pelas entradas do usuário para: Ini, Fim e Passo (valores inteiros que definem os atributos das repetições). As seguintes regras para a entrada devem ser satisfeitas: -150 <= Ini <= 50, Ini < Fim e Passo > 0, forçando apenas entradas válidas.
+
+Os resultados para cada combinação de valores para x e y serão apresentados em uma tabela impressa no terminal conforme os exemplos de execução a seguir. Os valores devem ser formatados com o mínimo de 10 caracteres e com precisão de 2 casas decimais.

@@ -1,0 +1,4 @@
+A função do movimento uniforme nos permite encontrar a posição (S) de um objeto que se movimenta com velocidade constante (v) em qualquer instante de tempo (t), desde que saibamos sua posição inicial (Si), através da seguinte fórmula:
+
+S=Si+v×t
+Implemente um programa que receba do usuário os valores de entrada, e as armazene em variáveis: posição inicial (Si), a velocidade (v) e o instante de tempo (t), respectivamente. Todas as entradas são números reais, sendo que Si deve ser maior ou igual a 0 (zero) e, por outro lado, v e t devem ser maiores do que 0 (zero). Observe que o programa avalia as entradas, forçando valores válidos. Em seguida, o programa deve realizar o cálculo da posição final (S) e imprimir o resultado no terminal com uma precisão de 2 casas decimais.

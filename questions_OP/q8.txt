@@ -1,0 +1,5 @@
+Uma competição internacional de ciclismo é baseada em percursos de quilometragens distintas. Os organizadores precisam divulgar o tamanho dos percursos para os competidores, mas estão com muita dificuldade de comunicação. Eles são de países distintos, que lidam com unidades de medida diferentes, Metro (m), Pé (ft) e Jarda (yd). Você, como bom brasileiro, resolveu ajudá-los, e implementará um programa que fará a leitura do tamanho dos percursos em metros e informará o tamanho deles em Pés e Jardas.
+
+Para isso, você implementará uma função chamada converteMedidas, que receberá como entrada o tamanho do percurso em metros (M) e retornará os resultados das conversões para pés (FT) e jardas (YD). Um pé equivale a 0,3048 m (ou seja, FT=0,3048×M. Por outro lado, uma jarda equivale a 0,9144 m (ou seja YD=0,9144∗M).
+
+Você também implementará um programa principal, que começará perguntando quantos percursos serão realizados, e depois fará as entradas do usuário para o tamanho dos percursos, em metros (valor real). Para cada percurso ele chamará a função converteMedidas e imprimirá os valores convertidos no terminal, com duas casas decimais.

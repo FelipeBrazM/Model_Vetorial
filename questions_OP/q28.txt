@@ -1,0 +1,8 @@
+Você trabalha em uma empresa de construção civil e precisa criar um programa em Python para gerenciar os dados de uma obra em andamento. Para isso, você deve criar um vetor de registros que representam as informações dos funcionários que trabalham na obra. Cada funcionário é representado por um registro com os seguintes campos:
+
+Cargo: informação textual do cargo exercido pelo funcionário;
+Salário: valor real que representa o salário bruto recebido pelo funcionário;
+Horas: valor inteiro que representa a quantidade de horas contratada para o funcionário.
+Seu programa deve, inicialmente, perguntar a quantidade de funcionários a serem cadastrados, fazer a entrada dos dados em um vetor de registros de funcionários e emitir relatórios para cargos definidos por entradas do usuário (o programa é encerrado quando o cargo informado for uma string vazia - ""). 
+
+Você deve implementar e usar a função Relatorio, que recebe vetor de funcionários e o cargo como argumento de entrada, calcula e retorna dois valores: o salário total (ST, arredondado para três casas decimais, usando a função round) e o total de horas (TH), considerando apenas funcionários que exercem o cargo informado. Para cada relatório gerado, o programa principal imprime os dados retornados pela função.

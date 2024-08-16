@@ -1,0 +1,8 @@
+A constante π pode ser calculada por meio da seguinte equação, onde N determina o número de termos considerado no cálculo:
+
+π=∑N−1i=0(−1)i×42×i+1,
+e o volume de uma esfera é calculado pela equação, onde r determina o raio da esfera:
+
+V=43×π×r3.
+
+Crie um programa que calcule a constante π por meio da série indicada acima, mas considerando um número de termos N (inteiro), fornecido pelo usuário. Utilize o valor de π obtido pela série para calcular o volume de uma esfera de raio r (inteiro), também fornecido pelo usuário. Considere que os valores fornecidos pelo usuário são sempre válidos. Como saída, o programa deverá exibir o valor obtido de π e o volume da esfera, ambos com 5 casas decimais.

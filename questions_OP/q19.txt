@@ -1,0 +1,1 @@
+Faça um programa que lê os elementos de uma matriz (números inteiros) com a função inputMatriz. O usuário deve informar a coluna cujos elementos serão multiplicados por 2. A coluna informada deve ser validada, forçando o usuário à definição de um valor válido. Imprima a matriz após as alterações. A matriz sempre terá pelo menos duas linhas e duas colunas.

@@ -1,0 +1,8 @@
+Você empresta dinheiro com cobrança de juros simples, que é calculada da seguinte forma:
+
+J=C×t×m
+onde: J é o valor dos juros devido; C é o capital emprestado; t é a taxa de juros do período; e m é a quantidade de meses para quitação da dívida.
+
+A taxa de juros depende do capital emprestado: para valores menores ou iguais a R$ 10.000,00, a taxa de juros é de 10% ao mês (ou seja, t=0,1), já para valores maiores do que R$ 10.000,00, a taxa de juros é de 7% ao mês (ou seja, t=0,07).
+
+Implemente um programa que receba como entradas os valores de: C (real) e m (inteiro). Em seguida ele determina a taxa de juros t, levando em consideração o valor do capital emprestado, e calcula o valor de juros devido. Ao final, o programa imprime a taxa de juros aplicada (valor percentual, com 0 casas decimais), o juros devido calculado (J, com 2 casas decimais) e o valor total da dívida (soma do capital emprestado e o juros devido, também com 2 casas decimais). 

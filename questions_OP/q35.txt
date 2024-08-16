@@ -1,0 +1,6 @@
+Em matemática, nomeadamente em teoria dos números, um terno pitagórico (ou trio pitagórico, ou ainda tripla pitagórica) é formado por três números naturais a, b e c tais que:
+
+a2+b2=c2
+O nome vem do teorema de Pitágoras que afirma que se as medidas dos lados de um triângulo retângulo são números inteiros, então essas medidas são um terno pitagórico.
+
+Implemente um programa que leia 3 números inteiros e verifique se os números representam um terno pitagórico. Para implementar seu programa, utilize o seguinte fluxograma:

@@ -1,0 +1,9 @@
+O valor de S, considerando N termos, pode ser obtido pelo somatório: 
+
+S=∑Ni=11i=11+12+13+14+...+1N
+O valor de P, considerando N termos, pode ser obtido pelo produtório: 
+
+P=∏Ni=121/i=21/1×21/2×21/3×21/4×...×21/N
+Implemente as funções chamadas Somatorio e Produtorio. Ambas recebem como argumento de entrada a quantidade de termos N, calculam e retornam, respectivamente, o valor de S e de P.
+
+Implemente também um programa principal, que fará a leitura de vários valores inteiros para \texttt{N}, enquanto for informado um valor maior do que zero (0). Para cada valor maior do que zero informado, o programa chama as funções Somatorio e Produtorio e imprime o resultado retornado por cada uma delas com uma precisão de 3 casas decimais.

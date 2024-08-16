@@ -1,0 +1,4 @@
+Segundo uma tabela médica, o peso ideal está relacionado com a altura e o sexo de uma pessoa. Implemente um programa que receba como entradas a altura (número real) e o sexo (valor textual); a seguir ele calcula e imprime o peso ideal dessa pessoa, utilizando as seguintes fórmulas:
+
+Para o sexo masculino: (72,7×H)−58
+Para o sexo feminino: (62,1×H)−44,7
