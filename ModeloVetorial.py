@@ -1,12 +1,4 @@
-""" Para implementar o modelo Vetorial, vamos seguir alguns passos:
-    Primeiro: processamento do texto ;
-    Segundo: Calcular o TF-IDF;
-    Terceiro: Calcular a similaridade de coscenos;
-    Quarto: Ranquear os documentos pela similaridade.
-"""
-# Para executar o código colocar na linha de comando: python ModeloVetorial.py
-
-# Essa biblioteca (nltk), auxilia no trabalho com a linguagem natural
+import os
 import nltk 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -16,21 +8,23 @@ nltk.download('rslp')
 nltk.download('wordnet')
 nltk.download('punkt')
 
-stopwords = nltk.corpus.stopwords.words # Lista de stopwords
-stopwords = nltk.corpus.stopwords.words("portuguese") # Pegando as stopwords em português
-stopwords.sort() # Ordenando as stopwords por ordem alfabética 
+stopwords = nltk.corpus.stopwords.words("portuguese") 
+stopwords.sort()
 
-# Função para ler as questões de um arquivo de texto
-def read_txt(name_file):
-    with open(name_file, 'r', encoding='utf-8') as file:
-        questions = file.readlines()
-    # Remover o caractere de nova linha de cada questão
-    questions = [q.strip() for q in questions]
+# Função para ler as questões de arquivos individuais na pasta 'questions_OP'
+def read_questions_from_folder(folder_path):
+    questions = []
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".txt"):
+            file_path = os.path.join(folder_path, filename)
+            with open(file_path, 'r', encoding='utf-8') as file:
+                question = file.read().strip()
+                questions.append(question)
     return questions
 
-# Use a função para ler as questões
-name_file = 'questions.txt'
-documents = read_txt(name_file)
+# Use a função para ler as questões da pasta 'questions_OP'
+folder_path = 'questions_OP'
+documents = read_questions_from_folder(folder_path)
 
 # Entrada da consulta
 query = input("O que deseja consultar no banco de questões?\n")
@@ -51,11 +45,10 @@ processed_query = preprocess(tokenized_query)
 # Preprocessar os documentos
 processed_documents = [preprocess(doc) for doc in tokenized_documents]
 
-# Segundo passo: Calcular o TF-IDF (Term Frequency — Inverse Document Frequency) 
-# Converter documentos tokenizados em texto
+# Segundo passo: Calcular o TF-IDF 
 preprocessed_documents = [' '.join(doc) for doc in processed_documents]
 preprocessed_query = ' '.join(processed_query)
-print("\n",preprocessed_query,"\n")
+print("\n", preprocessed_query, "\n")
 
 # Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
@@ -65,19 +58,20 @@ tfidf_matrix = tfidf_vectorizer.fit_transform(preprocessed_documents)
 query_vector = tfidf_vectorizer.transform([preprocessed_query])
 
 # Terceiro passo: Calcular similaridade de cosseno 
-cosine_similarity = cosine_similarity(query_vector, tfidf_matrix)
+cosine_sim = cosine_similarity(query_vector, tfidf_matrix)
 
 # Quarto passo: Ranquear documentos pela similaridade 
-results = [(documents[i], cosine_similarity[0][i]) for i in range (len(documents))]
-results.sort(key=lambda x : x[1], reverse=True)
+results = [(documents[i], cosine_sim[0][i]) for i in range(len(documents))]
+results.sort(key=lambda x: x[1], reverse=True)
 
 # Printa os documentos ranqueados
 found = False
 for doc, similarity in results: 
     if similarity != 0.0:
         print(f"Grau de similaridade: {similarity:.2f}\n{doc}\n")
+        print("=====================================================================================================================================================================\n")
         found = True
-# Se não encontrar nenhum documento com similaridade com a entrada printa essa mensagem para o usuário
-if found == False:
-    print(f"Nenhum resultado encontrado na base de dados para essa consulta!\n")
 
+# Se não encontrar nenhum documento com similaridade com a entrada printa essa mensagem para o usuário
+if not found:
+    print(f"Nenhum resultado encontrado na base de dados para essa consulta!\n")
