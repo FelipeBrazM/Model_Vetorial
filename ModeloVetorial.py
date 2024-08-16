@@ -48,7 +48,7 @@ processed_documents = [preprocess(doc) for doc in tokenized_documents]
 # Segundo passo: Calcular o TF-IDF 
 preprocessed_documents = [' '.join(doc) for doc in processed_documents]
 preprocessed_query = ' '.join(processed_query)
-print("\n", preprocessed_query, "\n")
+#print("\n", preprocessed_query, "\n")
 
 # Criar um TF-IDF em forma de vetor 
 tfidf_vectorizer = TfidfVectorizer()
