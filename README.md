@@ -1,2 +1,2 @@
 # Model_Vetorial
-Uma implementação em Python 3 do modelo vetorial de Recuperação de Informação.
+O modelo vetorial de Recuperação de Informação (RI) é uma abordagem algébrica que representa documentos e consultas como vetores em um espaço multidimensional. Cada dimensão corresponde a um termo de indexação, e os termos são ponderados com valores que indicam a relevância de cada termo em relação ao documento ou consulta. A similaridade entre um documento e uma consulta é calculada com base na proximidade desses vetores, geralmente usando a medida de similaridade do cosseno, que determina o grau de correspondência entre eles. Esse modelo é mais flexível que o modelo booleano, permitindo casar parcialmente termos e melhorar a precisão na recuperação de documentos relevantes.
